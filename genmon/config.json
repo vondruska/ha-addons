@@ -2,7 +2,7 @@
     "name": "Genmon",
     "description": "Generator Monitoring",
     "slug": "genmon",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "arch": [
         "armv7",
         "aarch64",

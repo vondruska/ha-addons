@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         curl \
         ca-certificates \
         xz-utils \
+    && apt-get clean
     && mkdir -p /usr/src/bashio \
     && curl -L -f -s "https://github.com/hassio-addons/bashio/archive/v0.16.2.tar.gz" \
         | tar -xzf - --strip 1 -C /usr/src/bashio \
