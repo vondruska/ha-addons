@@ -35,6 +35,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/armv7,linux/aarch64
           push: true
+          file: ./{{ matrix.addon }}/Dockerfile
           tags: |
             ghcr.io/${{ github.repository_owner }}/ha-addons/${{ matrix.addon }}:latest
             ghcr.io/${{ github.repository_owner }}/ha-addons/${{ matrix.addon }}:${{ env.VERSION }}
