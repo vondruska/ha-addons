@@ -25,7 +25,10 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Set version variable
-        run: echo "VERSION=$(jq '.version' < ${{ matrix.addon }}/config.json)" >> $GITHUB_ENV
+        run: |
+          $VERSION = $(jq '.version' < ${{ matrix.addon }}/config.json)
+          echo "Version: $VERSION"
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
