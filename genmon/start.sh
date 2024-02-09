@@ -15,6 +15,8 @@ if [ ! -f "/data/addon-firstun.lock" ]; then
   MQTT_PASSWORD=$(bashio::services mqtt "password")
 
   rm -f /data/conf/genmqtt.conf || true
+  mkdir -p /data/conf || true
+  
   echo "[genmqtt]" >> /data/conf/genmqtt.conf
   echo "mqtt_address = ${MQTT_HOST}" >> /data/conf/genmqtt.conf
   echo "username = ${MQTT_USER}" >> /data/conf/genmqtt.conf
