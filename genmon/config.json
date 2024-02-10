@@ -1,7 +1,7 @@
 {
     "name": "Genmon",
     "description": "Generator Monitoring",
-    "image": "ghcr.io/vondruska/ha-addons/genmon"
+    "image": "ghcr.io/vondruska/ha-addons/genmon",
     "slug": "genmon",
     "version": "0.0.14",
     "arch": [
