@@ -1,4 +1,4 @@
-FROM m0ngr31/genmon:weekly-2025-04-02
+FROM m0ngr31/genmon:weekly-2025-07-16
 
 # Update the genmon.conf file to use the TCP serial for ESP32 devices
 #RUN sed -i 's/use_serial_tcp = False/use_serial_tcp = True/g' /data/conf/genmon.conf

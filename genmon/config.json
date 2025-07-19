@@ -3,7 +3,7 @@
     "description": "Generator Monitoring",
     "image": "ghcr.io/vondruska/ha-addons/genmon",
     "slug": "genmon",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "arch": [
         "armv7",
         "aarch64",
